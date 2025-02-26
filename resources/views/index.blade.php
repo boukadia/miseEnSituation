@@ -19,7 +19,7 @@
             @foreach ($produits as $produit)
             
             <tr>
-                <td>{{ $produit['name'] }}</td>
+                <td>{{ $produit->name }}</td>
                 <td>{{ $produit['description'] }}</td>
                 <td>{{ $produit['price'] }}</td>
                 <td>
