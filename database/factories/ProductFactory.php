@@ -22,7 +22,7 @@ class ProductFactory extends Factory
             'name' => fake()->name(),
             'price' => fake()->numberBetween(1,100),
             'description' => fake()->text(),
-            'date' =>fake()-> date(),
+            
            
         ];
     }

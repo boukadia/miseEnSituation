@@ -13,8 +13,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view("index");
+        $produits=Product::all();
+        return view("index",["produits"=>$produits]);
     }
+   
 
     /**
      * Show the form for creating a new resource.

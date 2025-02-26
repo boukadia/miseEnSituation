@@ -14,14 +14,14 @@ class Product extends Model
     ];
     use HasFactory;
     
-    public function run(): void
-{
+//     public function run(): void
+// {
 
 
-    Product::factory()
-        ->count(50)
-        ->hasPosts(1)
-        ->create();
-}
+//     Product::factory()
+//         ->count(50)
+//         ->hasPosts(1)
+//         ->create();
+// }
     
 }

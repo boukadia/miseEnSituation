@@ -6,12 +6,29 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <input type="text" name="name" id="">
-        <input type="text" name="description" id="">
-        <input type="number" name="price" id="">
-        <input type="submit" name="submit" id="">
-
-    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>name</th>
+                <th>description</th>
+                <th>price</th>
+                <th>action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($produits as $produit)
+            
+            <tr>
+                <td>{{ $produit['name'] }}</td>
+                <td>{{ $produit['description'] }}</td>
+                <td>{{ $produit['price'] }}</td>
+                <td>
+                    <button>delete</button>
+                    <button>modifier</button>
+                </td>
+            </tr>
+            @endforeach
+        </tbody>
+    </table>
 </body>
 </html>
